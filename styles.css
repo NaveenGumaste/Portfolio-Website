@@ -41,23 +41,26 @@ nav a {
 	padding: 40px 20px;
 }
 
-/* CSS for the opacity animation */
+/* CSS for the typewriter animation */
 .animated-text span {
   opacity: 0;
-  animation: revealText 0.5s forwards ease-in-out;
+  animation: typeWriter 0.2s steps(125) forwards;
 }
 
-@keyframes revealText {
+@keyframes typeWriter {
+  from {
+    width: 0;
+  }
   to {
+    width: 100%;
     opacity: 1;
   }
 }
 
-/* .revealing {
-	animation: revealText 0.5s forwards ease-in-out;
-} */
 
-p {
+section, h2 {
+  display: flex;
+  justify-content: center;
 	color: white;
 	font-size: 16px;
 }

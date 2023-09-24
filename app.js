@@ -54,8 +54,7 @@ function animateText() {
 	for (let i = 0; i < text.length; i++) {
 		const charSpan = document.createElement("span");
 		charSpan.textContent = text[i] === " " ? "\u00A0" : text[i]; // Use non-breaking space for spaces
+		charSpan.style.animationDelay = `${i * 0.02}s`; // Adjust the delay for a staggered effect
 		paragraph.appendChild(charSpan);
 	}
 }
-
-
