@@ -41,32 +41,26 @@ nav a {
 	padding: 40px 20px;
 }
 
-
-.animated-text {
-  white-space: nowrap;
-  overflow: hidden;
-  font-size: 0;
-}
-
+/* CSS for the opacity animation */
 .animated-text span {
-  display: inline-block;
   opacity: 0;
-  transform: translateY(20px);
   animation: revealText 0.5s forwards ease-in-out;
 }
 
 @keyframes revealText {
   to {
     opacity: 1;
-    transform: translateY(0);
   }
 }
 
-p {
-  color: white; /* Set the text color to match the theme */
-  font-size: 16px; /* Adjust the font size as needed */
-}
+/* .revealing {
+	animation: revealText 0.5s forwards ease-in-out;
+} */
 
+p {
+	color: white;
+	font-size: 16px;
+}
 
 .card {
 	position: relative;
@@ -177,11 +171,11 @@ h2 {
 }
 
 footer {
-  text-align: center;
-  padding: 20px;
+	text-align: center;
+	padding: 20px;
 	background-image: linear-gradient(0deg, #0a0047 0%, #000000 100%);
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  color: white;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	color: white;
 }
