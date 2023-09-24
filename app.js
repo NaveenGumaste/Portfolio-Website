@@ -24,5 +24,9 @@ function animateText() {
 		charSpan.textContent = text[i] === " " ? "&nbsp;" : text[i]; // Preserve spaces
 		charSpan.style.animationDelay = `${i * 0.05}s`;
 		paragraph.appendChild(charSpan);
+
+		// Log each character to the console
+		console.log(charSpan.textContent);
 	}
 }
+
