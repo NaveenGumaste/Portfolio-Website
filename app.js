@@ -84,33 +84,6 @@ document.addEventListener("DOMContentLoaded", () => {
 	});
 });
 
-document.addEventListener("DOMContentLoaded", () => {
-	animateText();
-
-	const sections = document.querySelectorAll("section");
-
-	sections.forEach((section) => {
-		window.addEventListener("scroll", () => {
-			const scrollPosition = window.scrollY;
-
-			// Adjust the background position for a parallax effect
-			section.style.backgroundPositionY = `${-scrollPosition * 0.3}px`;
-		});
-	});
-
-	const cards = document.querySelectorAll(".card");
-
-	cards.forEach((card) => {
-		card.addEventListener("mouseenter", () => {
-			card.querySelector(".face.face2").style.height = "60px";
-		});
-
-		card.addEventListener("mouseleave", () => {
-			card.querySelector(".face.face2").style.height = "100%";
-		});
-	});
-});
-
 function animateText() {
 	const paragraph = document.querySelector(".animated-text");
 	const text = paragraph.innerText;
