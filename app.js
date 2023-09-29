@@ -45,42 +45,10 @@ document.addEventListener("DOMContentLoaded", () => {
 		});
 	});
 
-	// Add event listener for scrolling
-	window.addEventListener("scroll", () => {
-		const elements = document.querySelectorAll(".animate-on-scroll");
-
-		elements.forEach((element) => {
-			if (isElementInViewport(element)) {
-				element.classList.add("animate");
-			}
-		});
-	});
-});
-
-document.addEventListener("DOMContentLoaded", () => {
-	animateText();
-
+	// Remove the parallax effect from sections
 	const sections = document.querySelectorAll("section");
-
 	sections.forEach((section) => {
-		window.addEventListener("scroll", () => {
-			const scrollPosition = window.scrollY;
-
-			// Adjust the background position for a parallax effect
-			section.style.backgroundPositionY = `${-scrollPosition * 0.3}px`;
-		});
-	});
-
-	const cards = document.querySelectorAll(".card");
-
-	cards.forEach((card) => {
-		card.addEventListener("mouseenter", () => {
-			card.querySelector(".face.face2").style.height = "60px";
-		});
-
-		card.addEventListener("mouseleave", () => {
-			card.querySelector(".face.face2").style.height = "100%";
-		});
+		section.style.backgroundPositionY = "0"; // Reset background position
 	});
 });
 

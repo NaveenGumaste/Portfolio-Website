@@ -1,4 +1,7 @@
 body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -203,79 +206,3 @@ footer {
 	background-repeat: no-repeat;
 	background-size: cover;
 }
-
-/* Adjust the existing section styles */
-section {
-	display: flex;
-	justify-content: center;
-	color: white;
-	font-size: 16px;
-	height: 100vh; /* Set a fixed height for the parallax effect */
-	overflow: hidden; /* Hide overflowing content */
-	position: relative; /* Position elements inside */
-}
-
-/* Add styles for the parallax background */
-section#home {
-	background-image: url("./bg-img/Head.jpg");
-	background-attachment: fixed;
-	background-size: cover;
-	background-repeat: no-repeat;
-	background-position: center;
-}
-
-section#about {
-	background-image: url("./bg-img/Mid.jpg");
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: fill;
-}
-
-/* section#projects {
-  background-image: url('./bg-img/Tail.jpg');
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-} */
-
-/* section#contact {
-  background-image: url('path/to/contact-bg-image.jpg');
-	background-attachment: fixed;
-	background-position: center;
-	background-repeat: no-repeat;
-	background-size: cover;
-} */
-
-/* section#home {
-  background-image: url('./bg-img/Head.jpg');
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-section#about {
-  background-image: url('./bg-img/Mid.jpg');
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-section#projects {
-  background-image: url('./bg-img/Tail.jpg');
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-section#contact {
-  background-image: url('./bg-img/Tail.jpg');
-  background-attachment: fixed;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-} */
